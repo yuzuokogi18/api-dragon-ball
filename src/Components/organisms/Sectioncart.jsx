@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Cards from "../molecules/cart";
+import Cart from "../molecules/cart";
 import { useState, useEffect } from "react";
 
 const SectionStyled = styled.section`
@@ -16,7 +16,7 @@ const DivStyled = styled.div`
     padding: 1%;
 `;
 
-function Sectioncart() {
+function SectionCart() {
     const [characters, setCharacters] = useState([]);
 
     useEffect(() => {
@@ -29,24 +29,22 @@ function Sectioncart() {
     return (
         <DivStyled>
             <SectionStyled>
-                {
-                    characters.map(character =>
-                        <Cards
-                            key={character.id}
-                            id={character.id}
-                            name={character.name}
-                            image={character.image}
-                            ki={character.ki}
-                            maxKi={character.maxKi}
-                            race={character.race}
-                            gender={character.gender}
-                            affiliation={character.affiliation}
-                        />
-                    )
-                }
+                {characters.map(character => (
+                    <Cart
+                        key={character.id}
+                        id={character.id}
+                        name={character.name}
+                        image={character.image}
+                        ki={character.ki}
+                        maxKi={character.maxKi}
+                        race={character.race}
+                        gender={character.gender}
+                        affiliation={character.affiliation}
+                    />
+                ))}
             </SectionStyled>
         </DivStyled>
     );
 }
 
-export default Sectioncart;
+export default SectionCart;

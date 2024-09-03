@@ -7,8 +7,8 @@ const ImgStyled = styled.img`
     margin-bottom: 20px;
 `;
 
-function Imagen(props) {
-    return <ImgStyled src={props.src} alt={props.alt} />;
+function Imagen({ src, alt }) {
+    return <ImgStyled src={src} alt={alt} />;
 }
 
 export default Imagen;

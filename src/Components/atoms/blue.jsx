@@ -1,15 +1,15 @@
-function blue(props) {
+function Blue({ size = '10px', color }) {
     const style = {
         display: 'inline-block',
-        width: props.size || '10px', 
-        height: props.size || '10px',
+        width: size, 
+        height: size,
         borderRadius: '50%', 
-        backgroundColor: props.color, 
+        backgroundColor: color, 
         marginBottom: '0', 
         marginRight: '5px', 
     };
 
-    return <span style={style}></span>
+    return <span style={style}></span>;
 }
 
-export default blue;
+export default Blue;

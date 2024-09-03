@@ -11,9 +11,11 @@ const HeaderStyled = styled.header`
 `;
 
 function Header() {
-    return <HeaderStyled>
-        <TitleHeader text="DRAGONBALL API"></TitleHeader>
-    </HeaderStyled>
+    return (
+        <HeaderStyled>
+            <TitleHeader text="DRAGONBALL API" />
+        </HeaderStyled>
+    );
 }
 
-export default Header
+export default Header;

@@ -1,3 +1,4 @@
+
 import styled from "styled-components";
 
 const PStyled = styled.p`
@@ -12,8 +13,8 @@ const PStyled = styled.p`
     }
 `;
 
-function formation(props) {
-    return <PStyled>{props.text}</PStyled>;
+function Formation({ text }) {
+    return <PStyled>{text}</PStyled>;
 }
 
-export default formation;
+export default Formation;

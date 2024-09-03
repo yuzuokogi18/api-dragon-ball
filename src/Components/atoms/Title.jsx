@@ -12,8 +12,8 @@ const H1Styled = styled.h1`
     }
 `;
 
-function Title(props) {
-    return <H1Styled>{props.text}</H1Styled>;
+function Title({ text }) {
+    return <H1Styled>{text}</H1Styled>;
 }
 
 export default Title;

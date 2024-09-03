@@ -5,8 +5,8 @@ const PStyled = styled.p`
     font-weight: 800;
 `;
 
-function TitleHeader(props) {
-    return <PStyled>{props.text}</PStyled>
+function TitleHeader({ text }) {
+    return <PStyled>{text}</PStyled>;
 }
 
 export default TitleHeader;

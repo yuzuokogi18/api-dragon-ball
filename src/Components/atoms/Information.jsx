@@ -6,10 +6,10 @@ const PStyled = styled.p`
     color: #bebebe;
     margin-left: 5px;
     margin-top: 22px;
-`
+`;
 
-function Information(props) {
-    return <PStyled>{props.text}</PStyled>
+function Information({ text }) {
+    return <PStyled>{text}</PStyled>;
 }
 
-export default Information;
+export default Information

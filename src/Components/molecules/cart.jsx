@@ -25,23 +25,23 @@ const StyledContainerData = styled.div`
   width: 80%;
 `;
 
-function cart(props) {
+function Cart({ id, name, image, ki, maxKi, race, gender, affiliation }) {
     return (
-        <StyledDiv key={props.id}>
+        <StyledDiv key={id}>
             <StyledContainerImage>
-                <Imagen src={props.image} alt={props.name} />
+                <Imagen src={image} alt={name} />
             </StyledContainerImage>
 
             <StyledContainerData>
-                <Title text={props.name} />
-                <Information text={`Race: ${props.race}`} />
-                <Information text={`Gender: ${props.gender}`} />
-                <Information text={`Ki: ${props.ki}`} />
-                <Information text={`Max Ki: ${props.maxKi}`} />
-                <Information text={`Affiliation: ${props.affiliation}`} />
+                <Title text={name} />
+                <Information text={`Race: ${race}`} />
+                <Information text={`Gender: ${gender}`} />
+                <Information text={`Ki: ${ki}`} />
+                <Information text={`Max Ki: ${maxKi}`} />
+                <Information text={`Affiliation: ${affiliation}`} />
             </StyledContainerData>
         </StyledDiv>
     );
 }
 
-export default cart;
+export default Cart;

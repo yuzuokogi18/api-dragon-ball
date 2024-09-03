@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Cards from "../molecules/Cards";
+import Cards from "../molecules/cart";
 import { useState, useEffect } from "react";
 
 const SectionStyled = styled.section`
@@ -16,7 +16,7 @@ const DivStyled = styled.div`
     padding: 1%;
 `;
 
-function SectionCards() {
+function Sectioncart() {
     const [characters, setCharacters] = useState([]);
 
     useEffect(() => {
@@ -49,4 +49,4 @@ function SectionCards() {
     );
 }
 
-export default SectionCards;
+export default Sectioncart;

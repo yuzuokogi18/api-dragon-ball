@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import Imagen from "../atoms/Imagen";
-import Information from "../atoms/Information";
+import Information from "../atoms/formation";
 import Title from "../atoms/Title";
 
 const StyledDiv = styled.div`
@@ -25,7 +25,7 @@ const StyledContainerData = styled.div`
   width: 80%;
 `;
 
-function Cards(props) {
+function cart(props) {
     return (
         <StyledDiv key={props.id}>
             <StyledContainerImage>
@@ -44,4 +44,4 @@ function Cards(props) {
     );
 }
 
-export default Cards;
+export default cart;

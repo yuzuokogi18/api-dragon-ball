@@ -1,4 +1,4 @@
-function Pointt(props) {
+function blue(props) {
     const style = {
         display: 'inline-block',
         width: props.size || '10px', 
@@ -12,4 +12,4 @@ function Pointt(props) {
     return <span style={style}></span>
 }
 
-export default Pointt;
+export default blue;
